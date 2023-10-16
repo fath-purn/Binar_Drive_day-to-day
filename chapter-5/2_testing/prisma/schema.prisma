@@ -15,4 +15,14 @@ model User {
   name     String?
   email    String  @unique
   password String
+  articles Article[]
+}
+
+// tambahkan model article (id, title, body, user_id)(1-m | user <-> article)
+model Article {
+  id     Int     @id @default(autoincrement())
+  title  String
+  body   String
+  user   User    @relation(fields: [user_id], references: [id])
+  user_id Int
 }
