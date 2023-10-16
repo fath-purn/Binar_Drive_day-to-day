@@ -1,14 +1,20 @@
 Latihan:
+
+Dikerjakan: Purno
 - tambahkan model article (id, title, body, user_id)(1-m | user <-> article)
 - create article
     -> failed : user_id terdaftar didalam database
     -> failed : title/body kosong
     -> berhasil
+
+Dikerjakan: Putri
 - get all article
     -> berhasil
 - get article by id
     -> failed : article_id terdaftar didalam database
     -> berhasil
+
+Dikerjakan: Azza
 - get update by id
     -> failed : article_id terdaftar didalam database
     -> failed : user_id tidak terdaftar didalam database (kalau mengganti user_id)
